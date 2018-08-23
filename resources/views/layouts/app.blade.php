@@ -84,7 +84,7 @@
 
         @yield('content')
         <div class="footer padding-top-10 padding-bottom-10">
-        <h4><i class="fa fa-feather"></i> Created by Andrea Greening</h4>
+        <h4><i class="fa fa-feather"></i> <a style="color: #fff;" href="http://www.andreagreening.com?ref=rafflejar.com">Created by Andrea Greening</a></h4>
     </div>
     </div>
 
