@@ -1,0 +1,90 @@
+/*
+COLOR PALETTE
+#8B0A50 Dark Pink
+#ADAFB1 Background Grey
+#cfadb5 Light Pink
+
+
+
+
+
+
+*/
+
+
+
+body {
+	background-color: #ADAFB1;
+}
+
+.navbar {
+	background-color: #8B0A50;
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand{
+	font-family: 'Shrikhand', cursive;
+	font-size: 40px;
+}
+
+.title {
+	font-family: 'Teko', sans-serif;
+	color: #8B0A50;
+}
+
+.raffle-heading {
+		font-family: 'Teko', sans-serif;
+}
+/*h2 {
+	font-family: 'Raleway', sans-serif;
+}*/
+
+.list-group-item-info {
+	background-color: #b96c96;
+}
+
+.btn-primary {
+	background-color: #8B0A50;
+}
+
+.panel {
+	border-radius: 0;
+}
+
+.raffle-panel {
+	background-color: #8B0A50;
+	border: none;
+	font-family: 'Teko', sans-serif;
+	color: white;
+}
+
+.panel-sideline {
+ 	border-left-color: #8B0A50;
+	border-left-width: 4px;
+	border-bottom: none;
+	border-top: none;
+	border-right: none;
+}
+
+.footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8B0A50;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gradient {
+	  background: linear-gradient(to right, #359EAD
+ , #D4F2E6);

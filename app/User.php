@@ -1,0 +1,49 @@
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+
+class User extends Authenticatable
+{
+    use Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'email', 'password',
+    ];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
+
+    public function jars()
+    {
+        return $this->hasMany('Jar');
+    }
+
+    public function tickets()
+    {
+        return $this->hasMany('Ticket');
+    }
+
+    public function isOwner($jarId){
+        $jar = Jar::find($jarId);
+        if(!$jar) return false;
+       
+        return $this->id == $jar->user->id;
+    }
+
+    
+}
