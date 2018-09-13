@@ -231,6 +231,8 @@ return [
         'Prize' =>  App\Prize::class,
         'Ticket' =>  App\Ticket::class,
         'User' =>  App\User::class,
+        'Hits' =>  App\Hits::class,
+
 
 
 
